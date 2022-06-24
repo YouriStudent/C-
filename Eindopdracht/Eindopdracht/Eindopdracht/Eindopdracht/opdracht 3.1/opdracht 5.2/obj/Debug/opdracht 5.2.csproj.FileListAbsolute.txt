@@ -1,0 +1,11 @@
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\bin\Debug\opdracht 5.2.exe.config
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\bin\Debug\opdracht 5.2.exe
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\bin\Debug\opdracht 5.2.pdb
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.csproj.AssemblyReference.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.csproj.SuggestedBindingRedirects.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\obj\Debug\opdracht_5._2.Form1.resources
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\obj\Debug\opdracht_5._2.Properties.Resources.resources
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.csproj.GenerateResource.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.csproj.CoreCompileInputs.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.exe
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.pdb

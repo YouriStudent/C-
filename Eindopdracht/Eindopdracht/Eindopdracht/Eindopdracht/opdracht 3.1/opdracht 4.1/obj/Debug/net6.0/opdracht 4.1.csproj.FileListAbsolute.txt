@@ -1,0 +1,21 @@
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\appsettings.Development.json
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\appsettings.json
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.exe
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.deps.json
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.runtimeconfig.json
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.dll
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.pdb
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.csproj.AssemblyReference.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.GeneratedMSBuildEditorConfig.editorconfig
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.AssemblyInfoInputs.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.AssemblyInfo.cs
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.csproj.CoreCompileInputs.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.MvcApplicationPartsAssemblyInfo.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\staticwebassets.build.json
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\staticwebassets.development.json
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\scopedcss\bundle\opdracht 4.1.styles.css
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.dll
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\refint\opdracht 4.1.dll
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.pdb
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.genruntimeconfig.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\ref\opdracht 4.1.dll

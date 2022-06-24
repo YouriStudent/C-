@@ -1,0 +1,11 @@
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\bin\Debug\opdracht 3.5.exe.config
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\bin\Debug\opdracht 3.5.exe
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\bin\Debug\opdracht 3.5.pdb
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 5.4.csproj.AssemblyReference.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 5.4.csproj.SuggestedBindingRedirects.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\obj\Debug\opdracht_3._5.MyService.resources
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 5.4.csproj.GenerateResource.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 5.4.csproj.CoreCompileInputs.cache
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 3.5.exe
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 3.5.pdb
+Z:\c_hekje\3.1\opdracht 3.1\opdracht 3.5\obj\Debug\opdracht_3._5.ProjectInstaller.resources

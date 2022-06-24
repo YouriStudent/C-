@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C24CE614-D671-4F4F-AA7A-394C5960B699}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Eindopdracht</RootNamespace>
+    <AssemblyName>Eindopdracht</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>school_building_house_architecture_icon_209256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SplashScreen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SplashScreen.Winforms.1.0.0\lib\SplashScreen.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="opdracht 3.1\delegate.cs" />
+    <Compile Include="opdracht 3.1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opdracht 3.1\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opdracht 3.1\opdracht 3.1\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.1\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.1\Program.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.1\Properties\AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.3\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.3\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.3\Program.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.3\Properties\AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.4\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.4\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.4\Program.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.4\Properties\AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.5\MyService.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.5\MyService.Designer.cs">
+      <DependentUpon>MyService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opdracht 3.1\opdracht 3.5\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.5\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.5\Program.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.5\ProjectInstaller.cs" />
+    <Compile Include="opdracht 3.1\opdracht 3.5\ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opdracht 3.1\opdracht 3.5\Properties\AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.GlobalUsings.g.cs" />
+    <Compile Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\opdracht 4.1.AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\opdracht 4.1.GlobalUsings.g.cs" />
+    <Compile Include="opdracht 3.1\opdracht 4.1\Program.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 5.1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opdracht 3.1\Opdracht 5.1\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opdracht 3.1\Opdracht 5.1\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 5.1\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 5.1\Program.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 5.1\Properties\AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 5.1\Properties\Resources.Designer.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 5.1\Properties\Settings.Designer.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.2\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opdracht 3.1\opdracht 5.2\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opdracht 3.1\opdracht 5.2\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.2\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.2\Program.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.2\Properties\AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.2\Properties\Resources.Designer.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.2\Properties\Settings.Designer.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.3\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.3\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.3\Program.cs" />
+    <Compile Include="opdracht 3.1\opdracht 5.3\Properties\AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 6.1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opdracht 3.1\Opdracht 6.1\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opdracht 3.1\Opdracht 6.1\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 6.1\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 6.1\Program.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 6.1\Properties\AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 6.1\Properties\Resources.Designer.cs" />
+    <Compile Include="opdracht 3.1\Opdracht 6.1\Properties\Settings.Designer.cs" />
+    <Compile Include="opdracht 3.1\Opdracht db\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opdracht 3.1\Opdracht db\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opdracht 3.1\Opdracht db\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\Opdracht db\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\Opdracht db\Program.cs" />
+    <Compile Include="opdracht 3.1\Opdracht db\Properties\AssemblyInfo.cs" />
+    <Compile Include="opdracht 3.1\Opdracht db\Properties\Resources.Designer.cs" />
+    <Compile Include="opdracht 3.1\Opdracht db\Properties\Settings.Designer.cs" />
+    <Compile Include="opdracht 3.1\opdracht3.2\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht3.2\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="opdracht 3.1\opdracht3.2\Program.cs" />
+    <Compile Include="opdracht 3.1\opdracht3.2\Properties\AssemblyInfo.cs" />
+    <Compile Include="Splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splashscreen.Designer.cs">
+      <DependentUpon>Splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.nds-NL.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opdracht 3.1\opdracht 3.5\MyService.resx">
+      <DependentUpon>MyService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht_3._5.MyService.resources" />
+    <EmbeddedResource Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht_3._5.ProjectInstaller.resources" />
+    <EmbeddedResource Include="opdracht 3.1\opdracht 3.5\ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opdracht 3.1\Opdracht 5.1\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opdracht 3.1\Opdracht 5.1\obj\Debug\Opdracht_5._1.Form1.resources" />
+    <EmbeddedResource Include="opdracht 3.1\Opdracht 5.1\obj\Debug\Opdracht_5._1.Properties.Resources.resources" />
+    <EmbeddedResource Include="opdracht 3.1\Opdracht 5.1\Properties\Resources.resx" />
+    <EmbeddedResource Include="opdracht 3.1\opdracht 5.2\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opdracht 3.1\opdracht 5.2\obj\Debug\opdracht_5._2.Form1.resources" />
+    <EmbeddedResource Include="opdracht 3.1\opdracht 5.2\obj\Debug\opdracht_5._2.Properties.Resources.resources" />
+    <EmbeddedResource Include="opdracht 3.1\opdracht 5.2\Properties\Resources.resx" />
+    <EmbeddedResource Include="opdracht 3.1\Opdracht 6.1\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opdracht 3.1\Opdracht 6.1\obj\Debug\Opdracht_6._1.Form1.resources" />
+    <EmbeddedResource Include="opdracht 3.1\Opdracht 6.1\obj\Debug\Opdracht_6._1.Properties.Resources.resources" />
+    <EmbeddedResource Include="opdracht 3.1\Opdracht 6.1\Properties\Resources.resx" />
+    <EmbeddedResource Include="opdracht 3.1\Opdracht db\Properties\Resources.resx" />
+    <EmbeddedResource Include="Splashscreen.resx">
+      <DependentUpon>Splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Database1DataSet1.xsc">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet1.xss">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database2DataSet.xsc">
+      <DependentUpon>Database2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database2DataSet.xss">
+      <DependentUpon>Database2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="opdracht 3.1\.vs\C_Hekje\config\applicationhost.config" />
+    <None Include="opdracht 3.1\.vs\C_Hekje\DesignTimeBuild\.dtbcache.v2" />
+    <None Include="opdracht 3.1\.vs\C_Hekje\FileContentIndex\365c1e06-dbd6-4a12-b4a1-c0c45ac53f55.vsidx" />
+    <None Include="opdracht 3.1\.vs\C_Hekje\FileContentIndex\8970af49-3e30-44b5-9ee0-81eb0809c5cf.vsidx" />
+    <None Include="opdracht 3.1\.vs\C_Hekje\FileContentIndex\a9761b1c-eec8-4dff-935f-7aafb639fcf7.vsidx" />
+    <None Include="opdracht 3.1\.vs\C_Hekje\FileContentIndex\ba2093c8-969a-4669-bff8-9f57dab9656b.vsidx" />
+    <None Include="opdracht 3.1\.vs\C_Hekje\FileContentIndex\read.lock" />
+    <None Include="opdracht 3.1\.vs\C_Hekje\v17\.futdcache.v1" />
+    <None Include="opdracht 3.1\.vs\C_Hekje\v17\.suo" />
+    <None Include="opdracht 3.1\.vs\opdracht 3.1\FileContentIndex\175ac6f6-914e-4bf9-88c3-cf08c93bf45b.vsidx" />
+    <None Include="opdracht 3.1\.vs\opdracht 3.1\FileContentIndex\35dd9656-631d-45d5-bb4c-3b4104305940.vsidx" />
+    <None Include="opdracht 3.1\.vs\opdracht 3.1\FileContentIndex\44bbee2b-d7cc-4180-bf5d-5a0ec996178e.vsidx" />
+    <None Include="opdracht 3.1\.vs\opdracht 3.1\FileContentIndex\e4f0670c-6f32-4415-b521-c05553a51f19.vsidx" />
+    <None Include="opdracht 3.1\.vs\opdracht 3.1\FileContentIndex\read.lock" />
+    <None Include="opdracht 3.1\.vs\ProjectEvaluation\c_hekje.metadata.v2" />
+    <None Include="opdracht 3.1\.vs\ProjectEvaluation\c_hekje.projects.v2" />
+    <None Include="opdracht 3.1\opdracht 3.1\App.config" />
+    <None Include="opdracht 3.1\opdracht 3.1\bin\Debug\opdracht 3.1.exe.config" />
+    <None Include="opdracht 3.1\opdracht 3.1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\opdracht 3.1\obj\Debug\opdracht 3.1.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 3.1\obj\Debug\opdracht 3.1.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\opdracht 3.1\obj\Debug\opdracht 3.1.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\opdracht 3.1\obj\Release\opdracht 3.1.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 3.1\opdracht 3.1.csproj" />
+    <None Include="opdracht 3.1\opdracht 3.3\App.config" />
+    <None Include="opdracht 3.1\opdracht 3.3\bin\Debug\opdracht 3.3.exe.config" />
+    <None Include="opdracht 3.1\opdracht 3.3\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\opdracht 3.3\obj\Debug\opdracht 3.3.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 3.3\obj\Debug\opdracht 3.3.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\opdracht 3.3\obj\Debug\opdracht 3.3.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\opdracht 3.3\obj\Release\opdracht 3.3.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 3.3\opdracht 3.3.csproj" />
+    <None Include="opdracht 3.1\opdracht 3.4\App.config" />
+    <None Include="opdracht 3.1\opdracht 3.4\bin\Debug\opdracht 3.4.exe.config" />
+    <None Include="opdracht 3.1\opdracht 3.4\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\opdracht 3.4\obj\Debug\opdracht 3.4.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 3.4\obj\Debug\opdracht 3.4.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\opdracht 3.4\obj\Debug\opdracht 3.4.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\opdracht 3.4\obj\Release\opdracht 3.4.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 3.4\opdracht 3.4.csproj" />
+    <None Include="opdracht 3.1\opdracht 3.5\App.config" />
+    <None Include="opdracht 3.1\opdracht 3.5\bin\Debug\opdracht 3.5.exe.config" />
+    <None Include="opdracht 3.1\opdracht 3.5\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="opdracht 3.1\opdracht 3.5\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 3.5.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 5.4.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 5.4.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 5.4.csproj.GenerateResource.cache" />
+    <None Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 5.4.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\opdracht 3.5\obj\Release\opdracht 5.4.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 3.5\opdracht 5.4.csproj" />
+    <None Include="opdracht 3.1\opdracht 4.1\appsettings.Development.json" />
+    <None Include="opdracht 3.1\opdracht 4.1\appsettings.json" />
+    <None Include="opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\appsettings.Development.json" />
+    <None Include="opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\appsettings.json" />
+    <None Include="opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.deps.json" />
+    <None Include="opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.runtimeconfig.json" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.AssemblyInfoInputs.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.assets.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.csproj.BuildWithSkipAnalyzers" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.genruntimeconfig.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\staticwebassets.build.json" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\opdracht 4.1.csproj.nuget.dgspec.json" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\opdracht 4.1.csproj.nuget.g.props" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\opdracht 4.1.csproj.nuget.g.targets" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\project.assets.json" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\project.nuget.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\opdracht 4.1.AssemblyInfoInputs.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\opdracht 4.1.assets.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\opdracht 4.1.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\opdracht 4.1.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="opdracht 3.1\opdracht 4.1\obj\staticwebassets.pack.sentinel" />
+    <None Include="opdracht 3.1\opdracht 4.1\opdracht 4.1.csproj" />
+    <None Include="opdracht 3.1\opdracht 4.1\Properties\launchSettings.json" />
+    <None Include="opdracht 3.1\Opdracht 5.1\App.config" />
+    <None Include="opdracht 3.1\Opdracht 5.1\bin\Debug\Opdracht 5.1.exe.config" />
+    <None Include="opdracht 3.1\Opdracht 5.1\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="opdracht 3.1\Opdracht 5.1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\Opdracht 5.1\obj\Debug\Opdracht 5.1.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\Opdracht 5.1\obj\Debug\Opdracht 5.1.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\Opdracht 5.1\obj\Debug\Opdracht 5.1.csproj.GenerateResource.cache" />
+    <None Include="opdracht 3.1\Opdracht 5.1\obj\Debug\Opdracht 5.1.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\Opdracht 5.1\obj\Release\Opdracht 5.1.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\Opdracht 5.1\Opdracht 5.1.csproj" />
+    <None Include="opdracht 3.1\Opdracht 5.1\Properties\Settings.settings" />
+    <None Include="opdracht 3.1\opdracht 5.2\App.config" />
+    <None Include="opdracht 3.1\opdracht 5.2\bin\Debug\opdracht 5.2.exe.config" />
+    <None Include="opdracht 3.1\opdracht 5.2\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="opdracht 3.1\opdracht 5.2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.csproj.GenerateResource.cache" />
+    <None Include="opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\opdracht 5.2\obj\Release\opdracht 5.2.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 5.2\opdracht 5.2.csproj" />
+    <None Include="opdracht 3.1\opdracht 5.2\Properties\Settings.settings" />
+    <None Include="opdracht 3.1\opdracht 5.3\App.config" />
+    <None Include="opdracht 3.1\opdracht 5.3\bin\Debug\opdracht 5.3.exe.config" />
+    <None Include="opdracht 3.1\opdracht 5.3\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\opdracht 5.3\obj\Debug\opdracht 5.3.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 5.3\obj\Debug\opdracht 5.3.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\opdracht 5.3\obj\Debug\opdracht 5.3.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\opdracht 5.3\obj\Release\opdracht 5.3.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht 5.3\opdracht 5.3.csproj" />
+    <None Include="opdracht 3.1\Opdracht 6.1\App.config" />
+    <None Include="opdracht 3.1\Opdracht 6.1\bin\Debug\Opdracht 6.1.exe.config" />
+    <None Include="opdracht 3.1\Opdracht 6.1\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="opdracht 3.1\Opdracht 6.1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\Opdracht 6.1\obj\Debug\Opdracht 6.1.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\Opdracht 6.1\obj\Debug\Opdracht 6.1.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\Opdracht 6.1\obj\Debug\Opdracht 6.1.csproj.GenerateResource.cache" />
+    <None Include="opdracht 3.1\Opdracht 6.1\obj\Debug\Opdracht 6.1.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\Opdracht 6.1\obj\Release\Opdracht 6.1.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\Opdracht 6.1\Opdracht 6.1.csproj" />
+    <None Include="opdracht 3.1\Opdracht 6.1\Properties\Settings.settings" />
+    <None Include="opdracht 3.1\Opdracht db\App.config" />
+    <None Include="opdracht 3.1\Opdracht db\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="opdracht 3.1\Opdracht db\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\Opdracht db\obj\Debug\Opdracht db.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\Opdracht db\obj\Release\Opdracht db.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\Opdracht db\Opdracht db.csproj" />
+    <None Include="opdracht 3.1\Opdracht db\Properties\Settings.settings" />
+    <None Include="opdracht 3.1\opdracht3.2\App.config" />
+    <None Include="opdracht 3.1\opdracht3.2\bin\Debug\opdracht3.2.exe.config" />
+    <None Include="opdracht 3.1\opdracht3.2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht 3.2.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht 3.2.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht 3.2.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht3.2.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht3.2.csproj.CoreCompileInputs.cache" />
+    <None Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht3.2.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="opdracht 3.1\opdracht3.2\obj\Release\opdracht 3.2.csproj.AssemblyReference.cache" />
+    <None Include="opdracht 3.1\opdracht3.2\opdracht 3.2.csproj" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database2.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database2_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database2.mdf</DependentUpon>
+    </Content>
+    <Content Include="opdracht 3.1\C_Hekje.sln" />
+    <Content Include="opdracht 3.1\opdracht 3.1\bin\Debug\opdracht 3.1.exe" />
+    <Content Include="opdracht 3.1\opdracht 3.1\bin\Debug\opdracht 3.1.pdb" />
+    <Content Include="opdracht 3.1\opdracht 3.1\obj\Debug\opdracht 3.1.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\opdracht 3.1\obj\Debug\opdracht 3.1.exe" />
+    <Content Include="opdracht 3.1\opdracht 3.1\obj\Debug\opdracht 3.1.pdb" />
+    <Content Include="opdracht 3.1\opdracht 3.3\bin\Debug\opdracht 3.3.exe" />
+    <Content Include="opdracht 3.1\opdracht 3.3\bin\Debug\opdracht 3.3.pdb" />
+    <Content Include="opdracht 3.1\opdracht 3.3\obj\Debug\opdracht 3.3.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\opdracht 3.3\obj\Debug\opdracht 3.3.exe" />
+    <Content Include="opdracht 3.1\opdracht 3.3\obj\Debug\opdracht 3.3.pdb" />
+    <Content Include="opdracht 3.1\opdracht 3.4\bin\Debug\opdracht 3.4.exe" />
+    <Content Include="opdracht 3.1\opdracht 3.4\bin\Debug\opdracht 3.4.pdb" />
+    <Content Include="opdracht 3.1\opdracht 3.4\obj\Debug\opdracht 3.4.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\opdracht 3.4\obj\Debug\opdracht 3.4.exe" />
+    <Content Include="opdracht 3.1\opdracht 3.4\obj\Debug\opdracht 3.4.pdb" />
+    <Content Include="opdracht 3.1\opdracht 3.5\bin\Debug\opdracht 3.5.exe" />
+    <Content Include="opdracht 3.1\opdracht 3.5\bin\Debug\opdracht 3.5.pdb" />
+    <Content Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 3.5.exe" />
+    <Content Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 3.5.pdb" />
+    <Content Include="opdracht 3.1\opdracht 3.5\obj\Debug\opdracht 5.4.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.dll" />
+    <Content Include="opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.exe" />
+    <Content Include="opdracht 3.1\opdracht 4.1\bin\Debug\net6.0\opdracht 4.1.pdb" />
+    <Content Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\apphost.exe" />
+    <Content Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.dll" />
+    <Content Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\opdracht 4.1.pdb" />
+    <Content Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\refint\opdracht 4.1.dll" />
+    <Content Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\ref\opdracht 4.1.dll" />
+    <Content Include="opdracht 3.1\Opdracht 5.1\bin\Debug\Opdracht 5.1.exe" />
+    <Content Include="opdracht 3.1\Opdracht 5.1\bin\Debug\Opdracht 5.1.pdb" />
+    <Content Include="opdracht 3.1\Opdracht 5.1\obj\Debug\Opdracht 5.1.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\Opdracht 5.1\obj\Debug\Opdracht 5.1.exe" />
+    <Content Include="opdracht 3.1\Opdracht 5.1\obj\Debug\Opdracht 5.1.pdb" />
+    <Content Include="opdracht 3.1\opdracht 5.2\bin\Debug\opdracht 5.2.exe" />
+    <Content Include="opdracht 3.1\opdracht 5.2\bin\Debug\opdracht 5.2.pdb" />
+    <Content Include="opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.exe" />
+    <Content Include="opdracht 3.1\opdracht 5.2\obj\Debug\opdracht 5.2.pdb" />
+    <Content Include="opdracht 3.1\opdracht 5.3\bin\Debug\opdracht 5.3.exe" />
+    <Content Include="opdracht 3.1\opdracht 5.3\bin\Debug\opdracht 5.3.pdb" />
+    <Content Include="opdracht 3.1\opdracht 5.3\obj\Debug\opdracht 5.3.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\opdracht 5.3\obj\Debug\opdracht 5.3.exe" />
+    <Content Include="opdracht 3.1\opdracht 5.3\obj\Debug\opdracht 5.3.pdb" />
+    <Content Include="opdracht 3.1\Opdracht 6.1\bin\Debug\Opdracht 6.1.exe" />
+    <Content Include="opdracht 3.1\Opdracht 6.1\bin\Debug\Opdracht 6.1.pdb" />
+    <Content Include="opdracht 3.1\Opdracht 6.1\obj\Debug\Opdracht 6.1.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\Opdracht 6.1\obj\Debug\Opdracht 6.1.exe" />
+    <Content Include="opdracht 3.1\Opdracht 6.1\obj\Debug\Opdracht 6.1.pdb" />
+    <Content Include="opdracht 3.1\opdracht3.2\bin\Debug\opdracht3.2.exe" />
+    <Content Include="opdracht 3.1\opdracht3.2\bin\Debug\opdracht3.2.pdb" />
+    <Content Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht 3.2.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht3.2.csproj.FileListAbsolute.txt" />
+    <Content Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht3.2.exe" />
+    <Content Include="opdracht 3.1\opdracht3.2\obj\Debug\opdracht3.2.pdb" />
+    <Content Include="school_building_house_architecture_icon_209256.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="opdracht 3.1\.vs\C_Hekje\FileContentIndex\merges\" />
+    <Folder Include="opdracht 3.1\.vs\opdracht 3.1\FileContentIndex\merges\" />
+    <Folder Include="opdracht 3.1\opdracht 3.1\bin\Release\" />
+    <Folder Include="opdracht 3.1\opdracht 3.1\obj\Debug\TempPE\" />
+    <Folder Include="opdracht 3.1\opdracht 3.3\bin\Release\" />
+    <Folder Include="opdracht 3.1\opdracht 3.3\obj\Debug\TempPE\" />
+    <Folder Include="opdracht 3.1\opdracht 3.4\bin\Release\" />
+    <Folder Include="opdracht 3.1\opdracht 3.4\obj\Debug\TempPE\" />
+    <Folder Include="opdracht 3.1\opdracht 3.5\bin\Release\" />
+    <Folder Include="opdracht 3.1\opdracht 3.5\obj\Debug\TempPE\" />
+    <Folder Include="opdracht 3.1\opdracht 4.1\bin\Release\net6.0\" />
+    <Folder Include="opdracht 3.1\opdracht 4.1\obj\Debug\net6.0\staticwebassets\" />
+    <Folder Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\refint\" />
+    <Folder Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\ref\" />
+    <Folder Include="opdracht 3.1\opdracht 4.1\obj\Release\net6.0\staticwebassets\" />
+    <Folder Include="opdracht 3.1\Opdracht 5.1\bin\Release\" />
+    <Folder Include="opdracht 3.1\Opdracht 5.1\obj\Debug\TempPE\" />
+    <Folder Include="opdracht 3.1\opdracht 5.2\bin\Release\" />
+    <Folder Include="opdracht 3.1\opdracht 5.2\obj\Debug\TempPE\" />
+    <Folder Include="opdracht 3.1\opdracht 5.3\bin\Release\" />
+    <Folder Include="opdracht 3.1\opdracht 5.3\obj\Debug\TempPE\" />
+    <Folder Include="opdracht 3.1\Opdracht 6.1\bin\Release\" />
+    <Folder Include="opdracht 3.1\Opdracht 6.1\obj\Debug\TempPE\" />
+    <Folder Include="opdracht 3.1\Opdracht db\bin\Debug\" />
+    <Folder Include="opdracht 3.1\Opdracht db\bin\Release\" />
+    <Folder Include="opdracht 3.1\Opdracht db\obj\Debug\TempPE\" />
+    <Folder Include="opdracht 3.1\opdracht3.2\bin\Release\" />
+    <Folder Include="opdracht 3.1\opdracht3.2\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
