@@ -34,13 +34,10 @@ In de tabel hieronder staan alle invoeren beschreven.
 
 
 #### Uitvoer
-# TODO
-| Situatie                         | Type  |
-| -------------------------------- | ----- |
-| Het gemiddeld aantal dienstjaren | `int` |
 
-
-
+![](Screenshot%20from%202022-06-24%2021-30-26.png)
+![](Screenshot%20from%202022-06-24%2021-30-23.png)
+![](Screenshot%20from%202022-06-24%2021-30-18.png)
 #### Berekeningen
 
 | Situatie                                                      | Berekening |
@@ -112,13 +109,20 @@ Verwachte uitvoer:
 De gebruiker is aangemaakt.
 
 
-#### #1 De uitvoer van een bedrijf weergeven
+#### #2 De uitvoer van een bedrijf weergeven
 
-Ga naar 
+Vul alle testdata in en ga dan naar overzicht pagina
+
 
 Verwachte uitvoer:
-De gebruiker is aangemaakt.
+oudste werknemer = 0958
+totale vakantiedagen = 145
+Gemiddelde aantal dienstjaren = 0
+
+#### #3 De uitvoer van vakantie dagen voor 1 medewerker
+
+Ga naar vakantie dagen en select daar mederwerker 1999
 
 
-
-
+Verwachte uitvoer:
+Mederwerker 1999 heeft 24 vakantie dagen
